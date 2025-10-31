@@ -21,4 +21,4 @@ USER appuser
 
 COPY --from=builder --chown=appuser:appuser /app/.venv /app/.venv
 
-CMD ["./venv/bin/logger"]
+CMD ["/app/.venv/bin/logger"]
